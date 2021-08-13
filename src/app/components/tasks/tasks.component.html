@@ -1,0 +1,2 @@
+<app-add-task (addt)="add($event)"></app-add-task>
+<app-task-item (onremind)="remind(obj)" (ondeletetask)="delete(obj.id)" *ngFor="let obj of tasks" [task]="obj"></app-task-item>

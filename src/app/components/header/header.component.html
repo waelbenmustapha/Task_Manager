@@ -1,0 +1,4 @@
+<header>
+    <h1>Tasks Manager </h1>
+    <app-button *ngIf="hasroute('/')" color="{{showAddTask?'green':'red'}}" text="{{showAddTask?'Add':'Close'}}" (btnclick)="addtask()"></app-button>
+</header>
